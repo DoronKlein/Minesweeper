@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="MinesweeperPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>minesweeper.Emails_1</class>
+    <class>minesweeper.UsersVsGames_1</class>
+    <class>minesweeper.Games_1</class>
+    <class>minesweeper.Salts_1</class>
+    <class>minesweeper.Users_1</class>
+    <class>minesweeper.Names_1</class>
+    <class>minesweeper.Moves_1</class>
+    <class>minesweeper.Boards_1</class>
+    <class>minesweeper.Passwords_1</class>
+    <class>minesweeper.Sysdiagrams_1</class>
+    <class>connectors.Games</class>
+    <class>connectors.Moves</class>
+    <class>connectors.Names</class>
+    <class>connectors.Users</class>
+    <class>connectors.Salts</class>
+    <class>connectors.Emails</class>
+    <class>connectors.Boards</class>
+    <class>connectors.Sysdiagrams</class>
+    <class>connectors.UsersVsGames</class>
+    <class>connectors.Passwords</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=MinesweeperDB"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+    </properties>
+  </persistence-unit>
+</persistence>
